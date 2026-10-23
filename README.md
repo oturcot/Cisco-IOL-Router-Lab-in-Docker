@@ -537,6 +537,15 @@ tcpdump -ni lan0
 
 ---
 
+## To do
+
+- [ ] Review the full readme written by ai 
+- [ ] Cleanup files from testing
+- [ ] Add future features
+
+---
+
+
 # Disclaimer
 
 This project requires a legally obtained Cisco IOL image.
