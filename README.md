@@ -545,6 +545,56 @@ tcpdump -ni lan0
 
 ---
 
+# Roadmap
+
+## Planned Features
+
+### Networking
+
+- [ ] Remove Cisco NAT dependency and perform all NAT on the Linux container
+- [ ] Support multiple independent LAN segments per router
+
+### Security
+
+- [ ] Site-to-site IPsec examples
+- [ ] FortiGate integration examples
+
+### Routing
+
+- [ ] OSPF between routers
+- [ ] BGP between routers
+- [ ] Route redistribution examples
+- [ ] MPLS/VRF experiments
+
+### Container Integration
+
+- [ ] Linux client templates
+- [ ] Containerized application testing behind Cisco routers
+
+### Automation
+
+- [ ] Automatic router bootstrap configuration
+- [ ] Startup configuration templates
+- [ ] Environment variable driven router configuration
+- [ ] Terraform deployment examples
+- [ ] Ansible integration
+
+### Monitoring & Troubleshooting
+
+- [ ] Built-in health checks
+- [ ] Automatic router restart watchdog
+- [ ] Connectivity validation script
+- [ ] Packet capture helper scripts
+- [ ] Router status dashboard
+
+### Documentation
+
+- [ ] Multi-router topology examples
+- [ ] FortiGate IPsec lab guide
+- [ ] Architecture diagrams
+
+---
+
 
 # Disclaimer
 
