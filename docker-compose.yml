@@ -1,0 +1,78 @@
+services:
+
+  r1:
+    build: .
+    container_name: r1
+    hostname: r1
+    restart: unless-stopped
+    environment:
+      APP_ID: 1
+    volumes:
+      - ./r1:/data
+    networks:
+      lan:
+        interface_name: lan0
+      wan:
+        interface_name: wan0
+      r1-lan:
+        interface_name: eth0
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+
+
+  r2:
+    build: .
+    container_name: r2
+    hostname: r2
+    restart: unless-stopped
+    environment:
+      APP_ID: 2
+    volumes:
+      - ./r2:/data
+    networks:
+      lan:
+        interface_name: lan0
+      wan:
+        interface_name: wan0
+      r1-lan:
+        interface_name: eth0
+    privileged: true
+
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+
+
+  r3:
+    build: .
+    container_name: r3
+    hostname: r3
+    restart: unless-stopped
+    environment:
+      APP_ID: 3
+    volumes:
+      - ./r3:/data
+    networks:
+      lan:
+        interface_name: lan0
+      wan:
+        interface_name: wan0
+      r1-lan:
+        interface_name: eth0
+    privileged: true
+
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+
+
+
+networks:
+  lan:
+    driver: bridge
+  wan:
+    driver: bridge
+  r1-lan:
+    external: true
