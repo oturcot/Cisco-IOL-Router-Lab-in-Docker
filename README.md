@@ -545,6 +545,9 @@ tcpdump -ni lan0
 - [ ] Add future features
 - [ ] Add static version of ubridge
 - [ ] Make de IOL external to the container to be able to legally make it available prebuilt
+- [ ] Implementing a Release Process with GitHub Actions for Docker Image Management
+
+
 
 ---
 
