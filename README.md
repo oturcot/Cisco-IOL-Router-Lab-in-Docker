@@ -543,6 +543,8 @@ tcpdump -ni lan0
 - [ ] Cleanup files from testing
 - [ ] Test network speed
 - [ ] Add future features
+- [ ] Add static version of ubridge
+- [ ] Make de IOL external to the container to be able to legally make it available prebuilt
 
 ---
 
