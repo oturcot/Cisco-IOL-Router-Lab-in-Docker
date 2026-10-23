@@ -541,6 +541,7 @@ tcpdump -ni lan0
 
 - [ ] Review the full readme written by ai 
 - [ ] Cleanup files from testing
+- [ ] Test network speed
 - [ ] Add future features
 
 ---
